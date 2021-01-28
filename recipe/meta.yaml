@@ -1,4 +1,4 @@
-{% set version = '0.5.0' %}
+{% set version = "0.5.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/mlr3viz_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/mlr3viz/mlr3viz_{{ version }}.tar.gz
-  sha256: b49a5d8413eb73d6a8895d19e2baa1da1623c9d92b9b2a76dfa3650e26fed897
+  sha256: 103d6528fd46da1756df1f99a7b242288a0cd250e3299bae5225b0f3a80fffc9
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -45,14 +45,11 @@ test:
 about:
   home: https://mlr3viz.mlr-org.com, https://github.com/mlr-org/mlr3viz
   license: LGPL-3.0-only
-  summary: Provides visualizations for 'mlr3' objects such as tasks, predictions, resample results
-    or benchmark results via the autoplot() generic of 'ggplot2'. The returned 'ggplot'
-    objects are intended to provide sensible defaults, yet can easily be customized
-    to create camera-ready figures. Visualizations include barplots, boxplots, histograms,
-    ROC curves, and Precision-Recall curves.
+  summary: Provides visualizations for 'mlr3' objects such as tasks, predictions, resample results or benchmark results via the autoplot() generic of 'ggplot2'. The returned 'ggplot' objects are intended to provide sensible defaults, yet can easily be customized to create camera-ready figures. Visualizations include barplots,
+    boxplots, histograms, ROC curves, and Precision-Recall curves.
   license_family: LGPL
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-3
 
 extra:
   recipe-maintainers:
