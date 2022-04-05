@@ -29,13 +29,17 @@ requirements:
     - r-checkmate
     - r-data.table
     - r-ggplot2 >=3.3.0
-    - r-mlr3misc
+    - r-mlr3misc >=0.7.0
+    - r-scales
+    - r-viridis
   run:
     - r-base
     - r-checkmate
     - r-data.table
     - r-ggplot2 >=3.3.0
-    - r-mlr3misc
+    - r-mlr3misc >=0.7.0
+    - r-scales
+    - r-viridis
 
 test:
   commands:
