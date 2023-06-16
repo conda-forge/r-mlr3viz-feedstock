@@ -1,11 +1,11 @@
-About r-mlr3viz
-===============
+About r-mlr3viz-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-mlr3viz-feedstock/blob/main/LICENSE.txt)
 
 Home: https://mlr3viz.mlr-org.com, https://github.com/mlr-org/mlr3viz
 
 Package license: LGPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-mlr3viz-feedstock/blob/main/LICENSE.txt)
 
 Summary: Provides visualizations for 'mlr3' objects such as tasks, predictions, resample results or benchmark results via the autoplot() generic of 'ggplot2'. The returned 'ggplot' objects are intended to provide sensible defaults, yet can easily be customized to create camera-ready figures. Visualizations include barplots, boxplots, histograms, ROC curves, and Precision-Recall curves.
 
